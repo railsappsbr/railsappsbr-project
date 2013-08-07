@@ -1,6 +1,31 @@
-<h1>Editing user</h1>
+<body>
+<div id="page">
 
-<%= render 'form' %>
+ <div id="sidebar">
+        <ul id="sidebar-items">
+          <li>
+          <ul class="links">
+	        <%= link_to 'Show', @user %> |
+			<%= link_to 'Back', users_path %>
+          </ul>
+          </li>
+        </ul>
+      </div>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+
+<div id="content">
+  <div id="header">
+    <h1>RailsAppsBR Project</h1>
+  </div>
+
+<div id="getting-started">
+    <h1>Edit user</h1>
+	<%= render 'form' %>
+</div>
+
+</div>
+</div>
+</body>
+
+
+

@@ -1,40 +1,63 @@
-<p id="notice"><%= notice %></p>
+<body>
+<div id="page">
 
-<p>
-  <b>Name:</b>
-  <%= @user.name %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
-
-<p>
-  <b>Headline:</b>
-  <%= @user.headline %>
-</p>
-
-<p>
-  <b>Biography:</b>
-  <%= @user.biography %>
-</p>
-
-<p>
-  <b>Location:</b>
-  <%= @user.location %>
-</p>
-
-<p>
-  <b>Work:</b>
-  <%= @user.work %>
-</p>
-
-<p>
-  <b>Education:</b>
-  <%= @user.education %>
-</p>
+ <div id="sidebar">
+        <ul id="sidebar-items">
+          <li>
+          <ul class="links">
+             <%= link_to 'Edit', edit_user_path(@user) %> |
+            <%= link_to 'Back', users_path %>
+          </ul>
+          </li>
+        </ul>
+      </div>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div id="content">
+  <div id="header">
+    <h1>RailsAppsBR Project</h1>
+  </div>
+<div id="getting-started">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <b>Name:</b>
+    <%= @user.name %>
+  </p>
+
+  <p>
+    <b>Email:</b>
+    <%= @user.email %>
+  </p>
+
+  <p>
+    <b>Headline:</b>
+    <%= @user.headline %>
+  </p>
+
+  <p>
+    <b>Biography:</b>
+    <%= @user.biography %>
+  </p>
+
+  <p>
+    <b>Location:</b>
+    <%= @user.location %>
+  </p>
+
+  <p>
+    <b>Work:</b>
+    <%= @user.work %>
+  </p>
+
+  <p>
+    <b>Education:</b>
+    <%= @user.education %>
+  </p>
+</div>
+</div>
+</div>
+</body>
+
+
+
